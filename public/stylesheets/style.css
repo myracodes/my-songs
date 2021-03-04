@@ -42,7 +42,14 @@ button:hover {
 }
 
 button, input {
-  width: 200px;
+  min-width: 200px;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.song {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 2px #00B7FF solid;
+  border-radius: .5rem;
 }

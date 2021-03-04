@@ -1,1 +1,11 @@
 <h1>There are all my songs ☺</h1>
+
+{{#each songs}}
+<div class="song">
+    <p class="title"><b>Title:</b><br>{{this.title}}</p>
+    <p class="artist"><b>Artist:</b><br>{{this.artist}}</p>
+    <p class="chords"><b>Chords:</b><br>{{this.chords}}</p>
+    {{!-- <p class="lyrics"><b>Lyrics:</b><br>{{this.lyrics}}</p> --}}
+    <a href="/songs/edit/{{this._id}}">Edit this song</a>
+</div>
+{{/each}}
